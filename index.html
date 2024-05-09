@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="shortcut icon" href="./" type="image/x-icon"> -->
+        <!-- <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon"> -->
+        <title>DevLima</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <!-- <link rel="stylesheet" href="./estilos.css"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>DevLima</title>
+</head>
+<body data-bs-theme="light">
+
+    <!-- CABEÇALHO - NAVBAR -->
+    <header>
+        <!-- Barra de navegação com expansão em telas grandes e plano de fundo terciário -->
+        <!-- <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top"> -->
+        <nav class="navbar-expand-lg navbar fixed-top">
+        <!-- Contêiner fluido para envolver os elementos -->
+            <div class="container-fluid">
+
+                <!-- Link para o logotipo da página -->
+                <a class="navbar-brand" href="#">
+                    DevLima
+                </a>
+                
+                <!-- Botão de alternância para abrir o menu offcanvas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Menu offcanvas que aparece em telas menores -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <!-- Cabeçalho do menu offcanvas com título ou logotipo -->
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            DevLima
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <!-- Corpo do menu offcanvas com links de navegação -->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#projetos">Projeto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#tecnologias">Tecnologias</a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- <a class="nav-link active" aria-current="page" href="#contato">Contato</a> -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                                        <label class="form-check-label" for="modo-noturno">Modo noturno</label>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PRIMEIRA SEÇÃO  -->
+        <section class="banners d-flex flex-column justify-content-center text-center p-5">
+            <div class="py-5">
+                <h2 class="fw-bold p-left">Matheus Lima - Desenvolvedor Web</h2>
+                <p class="p-left">
+                    Esse portifólio é o primeiro passo. Depois de muito tempo planejando e me organizando eu decidi apenas dar o primeiro passo. Percebi que perdi tempo demais imaginando como as coisas poderiam ser e acabava não agindo, pensava e pensava e não colocava em prática. Pois bem, esse é o começo de um projeto que pretendo desenvolver ainda este ano de 2024. A priore essa página estática ira falar sobre minhas esacolhas e listar alguns projetos.
+                </p>
+                <p class="p-left">
+                    <i class="bi bi-exclamation-triangle-fill"></i> O site está em fase de Desenvolvimento!
+                </p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE -->
+        <!-- <section class="py-5" id="sobre">
+            <div class="py-3">
+                <h2 class="text-center fw-bold pb-1"> Sobre Mim </h2>
+                <div class="container d-flex justify-content-around flex-wrap">
+                    <div class="card m-4" style="width: 20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title py-2 fw-bold">FrontEnd</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium iste molestias odio dolor illum corporis quisquam facere possimus illo, porro fuga enim minima voluptatum modi, ea quo, consequatur necessitatibus pariatur!</p>
+                            <a href="#" class="btn botao-padrao w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#modal-1" aria-controls="offcanvasRight">Quero detalhes</a>
+                        </div>
+                    </div>
+                    <div class="card m-4" style="width: 20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">BackEnd</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, illo voluptate, ea recusandae quisquam aperiam officiis repellendus sapiente repudiandae saepe inventore ratione nostrum quas, laborum dolore culpa eaque voluptas quaerat!</p>
+                            <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="modal" data-bs-target="#modal-2" aria-controls="offcanvasRight">Quero detalhes</a>
+                        </div>
+                    </div>
+                    <div class="card m-4" style="width: 20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Banco De Dados</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, reprehenderit fugiat praesentium quidem culpa impedit earum unde enim nesciunt, maiores itaque debitis perspiciatis obcaecati ducimus ea error, asperiores placeat harum.</p>
+                            <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="modal" data-bs-target="#modal-3" aria-controls="offcanvasRight">Quero detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- SEÇÃO PROJETOS -->
+        <section class="py-5" id="projetos">
+            <div class="p-3">
+                <h2 class="text-center fw-bold pb-1" > Projetos </h2>
+
+                <div class="container d-flex justify-content-around flex-wrap">
+                    <div class="card m-3" style="width: 25rem;">
+                        <!-- <img src=" class="card-img-top" alt=""> -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title py-2 fw-bold">Entre em Contato</h5>
+                            <p class="card-text p-justificado">
+                                O primeiro projeto a ser apresentado é uma extensão desse que vos é apresentado, a principio vai parecer que é a mesma coisa, entretanto, adicionei a parte de contato podendo deixar as informações de vocês para que eu consiga entrar em contato!
+                            </p>
+                            <!-- <a href="#" class="btn botao-padrao w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#modal-1" aria-controls="offcanvasRight">Quero detalhes</a> -->
+                        </div>
+                        <div class="card-body text-center">
+                            <a href="" class="btn botao-padrao  fw-bold">Página</a>
+                            <a href="" class="btn botao-padrao  fw-bold">Código</a>
+                        </div>
+                    </div>
+
+                    <div class="card m-3" style="width: 25rem;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title py-2 fw-bold">Cadastro de usuários</h5>
+                            <p class="card-text p-justificado">
+                                O projeto tem como objetivo criar um sistema para o cadastro e gerenciamento de usuários bem simples, o famoso CRUD em php. O intuito é mostrar meu domínio dos principais conceitos do desenvolvimento web.
+                            </p>
+                        </div>
+                        <div class="card-body text-center">
+                            <a href="" class="btn botao-padrao  fw-bold">Página</a>
+                            <a href="" class="btn botao-padrao  fw-bold">Código</a>
+                        </div>
+                    </div>
+
+                    <div class="card m-3" style="width: 25rem;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title py-2 fw-bold">Ideia</h5>
+                            <p class="card-text p-justificado">
+                                Subindo o nível, nesse projeto eu gostaria de utilizar o framwork do laravel, também pra mostrar meus conhecimentos, mas com o intuito de desenvolver uma aplicação mais robusta. Ainda não pensei em algum sistema, mas o objetivo é esse.
+                            </p>
+                        </div>
+                        <div class="card-body text-center">
+                            <a href="" class="btn botao-padrao  fw-bold">Página</a>
+                            <a href="" class="btn botao-padrao  fw-bold">Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO TECNOLOGIA -->
+        <section class="py-5" id="tecnologias">
+            <div class="p-3">
+                <h2 class="text-center fw-bold mt-4 pb-1 pb-5" id="servicos">Tecnologias</h2>
+
+                <div class="row justify-content-center mx-auto">
+                    <div class="col-4 col-md-2 col-lg-1">
+                        <div class="card border-0 mx-auto btn image-card" data-bs-toggle="modal" data-bs-target="#tecnologia-1">
+                            <img src="./img/php_new.png" class="card-img-top" alt="">
+                        </div>
+                        <!-- <div class="card-body text-center">
+                            <h3 class="card-text fw-bold"></h3>
+                        </div> -->
+                    </div>
+                    <div class="col-4 col-md-2 col-lg-1" >
+                        <div class="card border-0 mx-auto btn image-card" data-bs-toggle="modal" data-bs-target="#tecnologia">
+                            <img src="./img/html.png" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 col-lg-1">
+                        <div class="card border-0 mx-auto btn image-card" data-bs-toggle="modal" data-bs-target="#tecnologia">
+                            <img src="./img/css.png" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 col-lg-1">
+                        <div class="card border-0 mx-auto btn image-card" data-bs-toggle="modal" data-bs-target="#tecnologia">
+                            <img src="./img/javascript.png" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 col-lg-1">
+                        <div class="card border-0 mx-auto btn image-card" data-bs-toggle="modal" data-bs-target="#tecnologia">
+                            <img src="./img/jQuery.png" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 col-lg-1">
+                        <div class="card border-0 mx-auto btn image-card" data-bs-toggle="modal" data-bs-target="#tecnologia">
+                            <img src="./img/bootstrap.png" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 col-lg-1">
+                        <div class="card border-0 mx-auto btn image-card" data-bs-toggle="modal" data-bs-target="#tecnologia">
+                            <img src="./img/laravel.png" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 col-lg-1">
+                        <div class="card border-0 mx-auto btn image-card" data-bs-toggle="modal" data-bs-target="#tecnologia">
+                            <img src="./img/base-de-dados.png" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 col-lg-1">
+                        <div class="card border-0 mx-auto btn image-card" data-bs-toggle="modal" data-bs-target="#tecnologia">
+                            <img src="./img/git.png" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENTRE EM CONTATO -->
+        <!-- <section class="py-5" id="contato">
+            <div class="p-3">
+                <div class="row">
+                    <div class="col-8 col-md-6 mx-auto">
+                        <h3 class="text-center fw-bold p-3"> Entre em Contato! </h3>
+
+                        <form id="contato">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nome" placeholder="Nome">
+                                <label for="nome"> Nome </label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="Email" placeholder="Email">
+                                <label for="Email"> Email </label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="telefone" placeholder="Telefone">
+                                <label for="telefone"> Telefone </label>
+                            </div>
+                        </form>
+        
+                        <select class="form-select mb-3" aria-label="Default select example">
+                            <option selected>preferência pra Contato</option>
+                            <option value="">WhatsApp</option>
+                            <option value="">Email</option>
+                            <option value="">Ligação</option>
+                        </select>
+            
+                        <label for="nivel-satisfacao"> Nivel de Satisfação: </label>
+                        <input type="range" class="form-range" id="nivel-satisfacao">
+            
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="novidades">
+                            <label class="form-check-label" for="novidades"> Deseja Receber Novidades por Email? </label>
+                        </div>
+            
+                        <button type="button" class="btn botao-padrao w-100 fw-bold py-3 mt-3"> Enviar </button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+
+    <footer class="text-center mt-4">
+
+        <section class="container p-4 pb-0">
+            <a target="_blank" href="#!" class="btn"> <i class="bi bi-whatsapp"></i> </a>
+            <a target="_blank" href="https://www.instagram.com/lima12__?igsh=MW11czM4MjJoYXNxNw==" class="btn"> <i class="bi bi-instagram"></i> </a>
+            <!-- <a target="_blank" href="#!" class="btn"> <i class="bi bi-twitter"></i> </a> -->
+            <a target="_blank" href="https://www.linkedin.com/in/jefferson-matheus-ferreira-de-lima-71aa9b263" class="btn"> <i class="bi bi-linkedin"></i> </a>
+            
+        </section>
+
+        <div class="p-3">
+            2024 <i class="bi bi-c-circle"></i> Desenvolvido por Matheus Lima | Portifólio.
+        </div>
+
+    </footer>
+
+    <!-- modal -1 -->
+    <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel"> Cafés Tradicionais </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <img src="./assets/produtos-cafe-tradicional.png" alt="" class="w-100"> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quia accusamus, non libero iure quasi pariatur commodi saepe unde deserunt qui, fugiat, nesciunt ducimus officiis atque necessitatibus corrupti repellat! Fuga!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis veniam culpa sit rerum a repellat asperiores eum praesentium. Laboriosam illum porro dolore nostrum asperiores sunt cumque qui quam perspiciatis optio?</p>
+                </div>
+                <div class="modal-footer mx-auto"> <!-- essa classe mx-auto deixa ele bem no centro -->
+                    <button type="button" class="btn botao-padrao border-0" data-bs-dismiss="modal">Fechar Janela</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- modal 2 -->
+    <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel"> Cafés Tradicionais </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <img src="./assets/produtos-cafe-tradicional.png" alt="Xícara de café preto" class="w-100"> -->
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati fugiat quos laborum in minus sunt voluptas ullam veniam molestias similique doloribus tempora, dolor excepturi nihil et ea consequuntur ratione cum!ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus alias eos voluptates officia optio reprehenderit, doloremque atque placeat aperiam reiciendis possimus repellendus ut vitae dolor architecto molestias nesciunt ducimus delectus.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem doloremque explicabo rerum! Ipsam nobis sequi vero tenetur commodi a iusto consequatur, obcaecati officia possimus quisquam voluptate fuga veniam labore ad?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis soluta eos natus laudantium tempora, vel beatae minus temporibus, odit numquam dolorum, magnam voluptate quas laboriosam incidunt eius sint. Minima, natus.</p>
+                </div>
+                <div class="modal-footer mx-auto"> <!-- essa classe mx-auto deixa ele bem no centro -->
+                    <button type="button" class="btn botao-padrao border-0" data-bs-dismiss="modal">Fechar Janela</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- modal 3 -->
+    <div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel"> Cafés Tradicionais </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <img src="./assets/produtos-cafe-tradicional.png" alt="Xícara de café preto" class="w-100"> -->
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa eius voluptate laudantium voluptatem aspernatur, accusamus voluptates repellat, sunt illum pariatur quo sequi blanditiis consequatur sed dolore excepturi laborum beatae nihil.</p>
+                </div>
+                <div class="modal-footer mx-auto"> <!-- essa classe mx-auto deixa ele bem no centro -->
+                    <button type="button" class="btn botao-padrao border-0" data-bs-dismiss="modal">Fechar Janela</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        
+</body>
+</html>

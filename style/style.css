@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Definindo variáveis de cores */
+body {
+    --bege: #E6E0D6; /* Cor bege */
+    --marrom-escuro: #816D4F; /* Cor marrom escuro */
+    --marrom-claro: #B29463; /* Cor marrom claro */
+
+    --color-primary-1: #75adc5;
+    --color-primary-2: #3596B5;
+    --color-primary-3: #296073;
+    --color-primary-4: #0E0054;
+
+    /*font-family: 'Barlow', sans-serif;*/ /* Fonte de texto */
+    
+    /* height: 2600px; Altura do corpo da página */
+}
+
+.p-justificado {
+    text-align: justify;
+}
+
+.p-left {
+    text-align: left;
+}
+
+.navbar {
+    background-color: var(--color-primary-1);
+}
+
+[data-bs-theme="dark"]{
+    color: white;
+    .nav-link, .card-body, .offcanvas, .btn , .accordion{
+    --bs-nav-link-color: white;
+    --bs-card-body: white;
+    --bs-offcanvas-color: white;
+    --bs-body-color: white;
+    --bs-body-color: white;
+    }
+}
+
+/* Estilizando caixas de seleção (checkboxes) */
+input[type=checkbox] {
+    border: 2px solid var(--color-primary-2);  /* Borda com a cor marrom-claro */
+    box-shadow: none;                       /* Sem sombra */
+}
+
+/* Estilizando caixas de seleção marcadas ou com foco */
+input[type=checkbox]:checked, input[type=checkbox]:focus {
+    background-color: var(--color-primary-2);  /* Cor de fundo marrom-claro */
+    border-color: var(--color-primary-2);      /* Cor da borda marrom-claro */
+    box-shadow: none;                       /* Sem sombra */
+    outline: none;                          /* Sem contorno quando em foco */
+}
+
+.banners {
+    width: 100%;                    /* Largura de 100% da largura disponível */
+    height: 100vh;                  /* Altura de 100% da altura da viewport */
+}
+
+.botao-padrao {
+    background-color: var(--color-primary-2);
+}
+
+.botao-padrao:hover {
+    background-color: var(--color-primary-3);
+}
+
+/* Estilizando o input range */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Removendo a aparência padrão do slider do Webkit */
+    width: 20px; /* Largura da bolinha */
+    height: 20px; /* Altura da bolinha */
+    background: var(--color-primary-1); /* Cor de fundo da bolinha */
+    border-radius: 50%; /* Fazendo a bolinha circular */
+    cursor: pointer; /* Mudando o cursor ao passar sobre a bolinha */
+}
+
+footer{
+    background-color: var(--color-primary-1);
+}
+
+.image-card {
+    /* max-width: 60%; */
+}
