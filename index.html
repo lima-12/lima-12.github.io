@@ -26,9 +26,7 @@
 
     <!-- CABEÇALHO - NAVBAR -->
     <header>
-        <header>
-
-            <nav class="navbar navbar-expand-lg navbar">
+            <nav class="navbar navbar-expand-lg navbar fixed-top">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         DevLima
@@ -44,6 +42,9 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#experiencia">Experiência</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#projetos">Projeto</a>
@@ -63,28 +64,85 @@
                     </div>
                 </div>
             </nav>
-
-        </header>  
     </header>
 
     <main>
-        <!-- PRIMEIRA SEÇÃO  -->
-        <section class="banners d-flex flex-column justify-content-center text-center p-5">
+        
+        <!-- INICIO -->
+        <section class="banners d-flex flex-column justify-content-center p-5">
             <div class="py-5">
-                <h2 class="fw-bold p-left">Matheus Lima - Desenvolvedor Web</h2>
-                <p class="p-left">
+                <h1 class="fw-bold">Matheus Lima - Desenvolvedor Web</h1>
+                <p>
                     Esse portifólio é o primeiro passo. Depois de muito tempo planejando e me organizando eu decidi apenas dar o primeiro passo. Percebi que perdi tempo demais imaginando como as coisas poderiam ser e acabava não agindo, pensava e pensava e não colocava em prática. Pois bem, esse é o começo de um projeto que pretendo desenvolver ainda este ano de 2024. A priore essa página estática ira falar sobre minhas esacolhas e listar alguns projetos.
                 </p>
-                <p class="p-left">
+                <p>
                     <i class="bi bi-exclamation-triangle-fill"></i> O site está em fase de Desenvolvimento!
                 </p>
             </div>
+
+            <div>
+                <a target="_blank" href="whatsapp://send?phone=5591989462256" class="btn btn-rede-social"> <i class="bi bi-whatsapp"></i> </a>
+                <a target="_blank" href="mailto:limaufpa2022@gmail.com" class="btn btn-rede-social"> <i class="bi bi-envelope"></i> </a>
+                <a target="_blank" href="https://www.instagram.com/lima12__?igsh=MW11czM4MjJoYXNxNw==" class="btn btn-rede-social"> <i class="bi bi-instagram"></i> </a>
+                <a target="_blank" href="https://www.linkedin.com/in/jefferson-matheus-ferreira-de-lima-71aa9b263" class="btn btn-rede-social"> <i class="bi bi-linkedin"></i> </a>
+            </div>
+
+        </section>
+
+        <!-- EXPERIENCIA -->
+        <section class="py-5" id="experiencia">
+            <div class="p-3">
+
+                <h1 class="text-center fw-bold pb-1">Experiência</h1>
+                
+                <div class="py-3 container d-flex justify-content-around flex-wrap">
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <h3>
+                                Estágio 
+                            </h3>
+                            <h6>
+                                01/07/2022 - 19/01/2024
+                            </h6>
+                        </div>
+                        <h4>Montreal Informática SA</h4>
+                        <div>
+                            <p class="p-justificado">
+                                Durante meu trabalho, desenvolvi habilidades sólidas em lógica de programação ao enfrentar problemas reais, além de realizar a manutenção de sites, monitorando seu desempenho e intervindo quando necessário. Uma parte significativa das minhas responsabilidades incluía revisar códigos para identificar possíveis erros e garantir o funcionamento adequado dos programas. Além disso, fui encarregado de fazer alterações nos layouts, gerar relatórios em pdf e csv, corrigir bugs e atualizar páginas para uma visualização mais moderna. Mantive-me motivado para aprender novas tecnologias, cumprindo prazos com atenção. Minha comunicação foi fundamental nessa fase inicial de desenvolvimento. Utilizei uma variedade de tecnologias, incluindo PHP, SQL, HTML, CSS, Bootstrap, JavaScript, git, jQuery, Ajax, DataTable, Mpdf e Fpdf.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="py-3 container d-flex justify-content-around flex-wrap">
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <h3>
+                                Auxiliar de Processamento de Dados
+                            </h3>
+                            <h6>
+                                19/01/2024 - HOJE
+                            </h6>
+                        </div>
+                        <h4>Montreal Informática SA</h4>
+                        <div>
+                            <p class="p-justificado">
+                                Após um período como estagiário, fui promovido para o cargo de Auxiliar de Processamento de Dados, assumindo novas responsabilidades e aumentando a confiança no meu desenvolvimento. Com essa promoção, além das minhas atribuições anteriores, fui encarregado de orientar os novos estagiários, introduzindo-os ao ambiente da empresa, repassando demandas e compartilhando conhecimentos sobre as tecnologias utilizadas. Estou comprometido em seguir o exemplo que recebi, contribuindo para o crescimento e desenvolvimento da equipe. Além das tecnologias mencionadas anteriormente, tive a oportunidade de trabalhar com o framework Laravel, ampliando meu conjunto de habilidades.
+                            </p>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+
         </section>
 
         <!-- SEÇÃO SOBRE -->
         <!-- <section class="py-5" id="sobre">
             <div class="py-3">
-                <h2 class="text-center fw-bold pb-1"> Sobre Mim </h2>
+                <h1 class="text-center fw-bold pb-1"> Sobre Mim </h1>
                 <div class="container d-flex justify-content-around flex-wrap">
                     <div class="card m-4" style="width: 20rem;">
                         <div class="card-body">
@@ -114,7 +172,7 @@
         <!-- SEÇÃO PROJETOS -->
         <section class="py-5" id="projetos">
             <div class="p-3">
-                <h2 class="text-center fw-bold pb-1" > Projetos </h2>
+                <h1 class="text-center fw-bold pb-1"> Projetos </h1>
 
                 <div class="container d-flex justify-content-around flex-wrap">
                     <div class="card m-3" style="width: 25rem;">
@@ -164,7 +222,7 @@
         <!-- SEÇÃO TECNOLOGIA -->
         <section class="py-5" id="tecnologias">
             <div class="p-3">
-                <h2 class="text-center fw-bold mt-4 pb-1 pb-5" id="servicos">Tecnologias</h2>
+                <h1 class="text-center fw-bold mt-4 pb-1 pb-5" id="servicos">Tecnologias</h1>
 
                 <div class="row justify-content-center mx-auto">
                     <div class="col-4 col-md-2 col-lg-1">
@@ -267,11 +325,10 @@
     <footer class="text-center mt-4">
 
         <section class="container p-4 pb-0">
-            <a target="_blank" href="#!" class="btn"> <i class="bi bi-whatsapp"></i> </a>
+            <a target="_blank" href="whatsapp://send?phone=5591989462256" class="btn"> <i class="bi bi-whatsapp"></i> </a>
+            <a target="_blank" href="mailto:limaufpa2022@gmail.com" class="btn"> <i class="bi bi-envelope"></i> </a>
             <a target="_blank" href="https://www.instagram.com/lima12__?igsh=MW11czM4MjJoYXNxNw==" class="btn"> <i class="bi bi-instagram"></i> </a>
-            <!-- <a target="_blank" href="#!" class="btn"> <i class="bi bi-twitter"></i> </a> -->
             <a target="_blank" href="https://www.linkedin.com/in/jefferson-matheus-ferreira-de-lima-71aa9b263" class="btn"> <i class="bi bi-linkedin"></i> </a>
-            
         </section>
 
         <div class="p-3">
