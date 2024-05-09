@@ -95,3 +95,20 @@ footer{
     color:#fff;
 
 }
+
+.image-card {
+    transition: transform 0.3s ease;
+}
+
+.image-card:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
